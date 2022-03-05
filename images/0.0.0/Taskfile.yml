@@ -1,0 +1,26 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  build:
+    desc: Build Image.
+    run: once
+    vars:
+      DOCKER_TAG: 0.0.0
+    cmds:
+      - >-
+        docker buildx build --platform={{.DOCKER_PLATFORMS}}
+        --file Dockerfile
+        --tag {{.DOCKER_ORGANIZATION}}/{{.DOCKER_IMAGE_NAME}}:{{.DOCKER_TAG}} .
+        --build-arg VERSION={{.DOCKER_TAG}}
+
+  publish:
+    desc: Publish Image.
+    run: once
+    vars:
+      DOCKER_TAG: 0.0.0
+    deps:
+      - build
+    cmds:
+      - docker push {{.DOCKER_ORGANIZATION}}/{{.DOCKER_IMAGE_NAME}}:{{.DOCKER_TAG}}
