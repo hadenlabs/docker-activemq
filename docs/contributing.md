@@ -1,19 +1,19 @@
 <!-- Space: Projects -->
-<!-- Parent: DockerTemplate -->
-<!-- Title: Contributing DockerTemplate -->
+<!-- Parent: DockerActiveMQ -->
+<!-- Title: Contributing DockerActiveMQ -->
 
-<!-- Label: DockerTemplate -->
+<!-- Label: DockerActiveMQ -->
 <!-- Label: Contributing -->
 <!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
 # How To Contribute
 
-Contributions to docker-template are welcome.
+Contributions to docker-activemq are welcome.
 
 Feel free to use all of the contribution options:
 
-- Contribute to docker-template repositories on [GitHub](https://github.com/hadenlabs/docker-template). See [Git flow](./contribute/git-flow.md).
+- Contribute to docker-activemq repositories on [GitHub](https://github.com/hadenlabs/docker-activemq). See [Git flow](./contribute/git-flow.md).
 
 ## Getting Started
 
@@ -74,7 +74,7 @@ See [Git flow](./contribute/git-flow.md).
 
 ### Documentation
 
-Documentation is a part of the docker-template code base. You can find the documentation files in the `doc/` subdirectory of the [main repository](https://github.com/hadenlabs/docker-template). This means that the contribution process is the same for both the source code and documentation.
+Documentation is a part of the docker-activemq code base. You can find the documentation files in the `doc/` subdirectory of the [main repository](https://github.com/hadenlabs/docker-activemq). This means that the contribution process is the same for both the source code and documentation.
 
 ### Testing
 
@@ -82,15 +82,15 @@ See [Testing](./testing.md).
 
 ### Code Submission
 
-1.  See if a [Pull Request](https://github.com/hadenlabs/docker-template/pulls) exists
+1.  See if a [Pull Request](https://github.com/hadenlabs/docker-activemq/pulls) exists
     - Add some comments or review the code to help it along
     - Don\'t be afraid to comment when logic needs clarification
-2.  Create a Fork and open a [Pull Request](https://github.com/hadenlabs/docker-template/pulls) if needed
+2.  Create a Fork and open a [Pull Request](https://github.com/hadenlabs/docker-activemq/pulls) if needed
 
 ### Code Review
 
 - Anyone can review code
-- Any [Pull Request](https://github.com/hadenlabs/docker-template/pulls) should be closed or merged within a week
+- Any [Pull Request](https://github.com/hadenlabs/docker-activemq/pulls) should be closed or merged within a week
 
 ### Code Acceptance
 

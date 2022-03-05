@@ -47,7 +47,7 @@ repos:
       - id: fix-encoding-pragma
       - id: sort-simple-yaml
   - repo: https://github.com/hadenlabs/pre-commit-hooks
-    rev: e3aeceffc0e70679526673312ca6a42658aa5dea
+    rev: 47e07f691058d12b2f8f49912b5568654d26331f
     hooks:
       - id: do-not-commit
       - id: markdown-link-check
@@ -67,7 +67,7 @@ repos:
       - id: golangci-lint
         args:
           - --fix
-          - --config=.github/linters/.golangci.yml
+          - --config=.ci/linters/.golangci.yml
       - id: todocheck
       - id: gitleaks
         args:

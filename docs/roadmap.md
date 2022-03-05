@@ -1,6 +1,6 @@
 <!-- Space: Projects -->
-<!-- Parent: DockerTemplate -->
-<!-- Title: Roadmap DockerTemplate -->
+<!-- Parent: DockerActiveMQ -->
+<!-- Title: Roadmap DockerActiveMQ -->
 
 <!-- Label: Roadmap -->
 <!-- Include: disclaimer.md -->
@@ -30,7 +30,7 @@
 
 The Roadmap is a list of all the things we're working on for the year.
 
-You can see the corresponding projects on [docker-template](https://github.com/hadenlabs/docker-template)
+You can see the corresponding projects on [docker-activemq](https://github.com/hadenlabs/docker-activemq)
 
 ## Legend
 

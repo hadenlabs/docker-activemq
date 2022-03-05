@@ -5,7 +5,7 @@
 #
 
 # Name of this project
-name: docker-template
+name: docker-activemq
 
 email:
   support: support@hadenlabs.com
@@ -17,19 +17,19 @@ email:
 license: 'LGPL-3.0'
 
 # Canonical GitHub repo
-github_repo: hadenlabs/docker-template
+github_repo: hadenlabs/docker-activemq
 
 # Badges to display
 badges:
   - name: Latest Release
-    image: https://img.shields.io/github/release/hadenlabs/docker-template
-    url: https://github.com/hadenlabs/docker-template/releases
+    image: https://img.shields.io/github/release/hadenlabs/docker-activemq
+    url: https://github.com/hadenlabs/docker-activemq/releases
   - name: Lint
-    image: https://img.shields.io/github/workflow/status/hadenlabs/docker-template/lint-code
-    url: https://github.com/hadenlabs/docker-template/actions
+    image: https://img.shields.io/github/workflow/status/hadenlabs/docker-activemq/lint-code
+    url: https://github.com/hadenlabs/docker-activemq/actions
   - name: Issues
-    image: https://img.shields.io/github/issues/hadenlabs/docker-template
-    url: https://github.com/hadenlabs/docker-template/issues
+    image: https://img.shields.io/github/issues/hadenlabs/docker-activemq
+    url: https://github.com/hadenlabs/docker-activemq/issues
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit

@@ -9,7 +9,7 @@ import (
 
 func TestDockerNameSuccess(t *testing.T) {
 
-	tag := "hadenlabs/docker-template:latest"
+	tag := "hadenlabs/docker-activemq:latest"
 	otherOptions := []string{
 		"--no-cache",
 	}

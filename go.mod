@@ -1,4 +1,4 @@
-module github.com/hadenlabs/docker-template
+module github.com/hadenlabs/docker-activemq
 
 go 1.16
 

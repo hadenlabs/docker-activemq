@@ -1,8 +1,8 @@
 <!-- Space: Projects -->
-<!-- Parent: DockerTemplate -->
-<!-- Title: Components DockerTemplate -->
+<!-- Parent: DockerActiveMQ -->
+<!-- Title: Components DockerActiveMQ -->
 
-<!-- Label: DockerTemplate -->
+<!-- Label: DockerActiveMQ -->
 <!-- Label: Project -->
 <!-- Label: Components -->
 <!-- Include: disclaimer.md -->

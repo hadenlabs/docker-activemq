@@ -37,11 +37,11 @@ dotenv:
   - .env
 
 vars:
-  PROJECT_NAME: docker-template
+  PROJECT_NAME: docker-activemq
   ORGANIZATION: hadenlabs
   DOCKER_ORGANIZATION: hadenlabs
   DOCKER_PLATFORMS: linux/amd64,linux/arm/v7,linux/arm64/v8
-  DOCKER_IMAGE_NAME: docker-template
+  DOCKER_IMAGE_NAME: docker-activemq
   DOCKER_TAG: 0.0.0
   REVIEWERS: luismayta
   PYTHON_VERSION: 3.9.2

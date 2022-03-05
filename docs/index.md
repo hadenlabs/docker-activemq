@@ -1,1 +1,1 @@
-# Welcome to docker-template documentation
+# Welcome to docker-activemq documentation

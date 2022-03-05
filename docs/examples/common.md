@@ -1,6 +1,6 @@
 <!-- Space: Projects -->
-<!-- Parent: DockerTemplate -->
-<!-- Title: Examples DockerTemplate -->
+<!-- Parent: DockerActiveMQ -->
+<!-- Title: Examples DockerActiveMQ -->
 
 <!-- Label: Examples -->
 <!-- Include: ./../disclaimer.md -->

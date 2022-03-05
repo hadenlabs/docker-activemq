@@ -1,8 +1,8 @@
 <!-- Space: Projects -->
-<!-- Parent: DockerTemplate -->
-<!-- Title: Releasing DockerTemplate -->
+<!-- Parent: DockerActiveMQ -->
+<!-- Title: Releasing DockerActiveMQ -->
 
-<!-- Label: DockerTemplate -->
+<!-- Label: DockerActiveMQ -->
 <!-- Label: Project -->
 <!-- Label: Releasing -->
 <!-- Include: disclaimer.md -->
@@ -12,7 +12,7 @@
 
 ## Bump a new version
 
-Make a new version of docker-template in the following steps:
+Make a new version of docker-activemq in the following steps:
 
 ### Generate version major
 
