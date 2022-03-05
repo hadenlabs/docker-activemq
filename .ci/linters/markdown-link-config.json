@@ -1,11 +1,11 @@
 {
-  "baseUrl": "https://github.com/hadenlabs/docker-template",
+  "baseUrl": "https://github.com/hadenlabs/docker-activemq",
   "ignorePatterns": [
     {
       "pattern": "^https://hadenlabs.com"
     },
     {
-      "pattern": "^https://github.com/hadenlabs/docker-template/compare"
+      "pattern": "^https://github.com/hadenlabs/docker-activemq/compare"
     }
   ],
   "replacementPatterns": [

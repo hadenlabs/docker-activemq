@@ -1,4 +1,4 @@
-origin: github.com/hadenlabs/docker-template
+origin: github.com/hadenlabs/docker-activemq
 issue_tracker: GITHUB
 auth:
   type: none

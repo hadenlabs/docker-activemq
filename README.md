@@ -12,9 +12,9 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/hadenlabs/docker-template)](https://github.com/hadenlabs/docker-template/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/docker-template/lint-code)](https://github.com/hadenlabs/docker-template/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/docker-template)](https://github.com/hadenlabs/docker-template/issues) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
+[![Latest Release](https://img.shields.io/github/release/hadenlabs/docker-activemq)](https://github.com/hadenlabs/docker-activemq/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/docker-activemq/lint-code)](https://github.com/hadenlabs/docker-activemq/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/docker-activemq)](https://github.com/hadenlabs/docker-activemq/issues) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
-# docker-template
+# docker-activemq
 
 Action confluence sync that can be used to publish markdown documents to confluence. This action is a thin wrapper around the mark See the action.yaml file for details of required inputs.
 
@@ -59,7 +59,7 @@ jobs:
             *.tpl.md
 
       - name: Sync confluence
-        uses: hadenlabs/docker-template@0.1.0
+        uses: hadenlabs/docker-activemq@0.1.0
         with:
           confluence_base_url: '${{ secrets.CONFLUENCE_BASE_URL }}'
           confluence_user: '${{ secrets.CONFLUENCE_USER }}'
@@ -71,7 +71,7 @@ jobs:
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/hadenlabs/docker-template/issues).
+File a GitHub [issue](https://github.com/hadenlabs/docker-activemq/issues).
 
 ## Contributing
 
@@ -104,6 +104,6 @@ All other trademarks referenced herein are the property of their respective owne
 
 The code and styles are licensed under the LGPL-3.0 license [See project license.](LICENSE).
 
-## Don't forget to 🌟 Star 🌟 the repo if you like docker-template
+## Don't forget to 🌟 Star 🌟 the repo if you like docker-activemq
 
-[Your feedback is appreciated](https://github.com/hadenlabs/docker-template/issues)
+[Your feedback is appreciated](https://github.com/hadenlabs/docker-activemq/issues)

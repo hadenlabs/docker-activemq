@@ -7,7 +7,7 @@ FROM ubuntu:20.04
 ARG VERSION=0.0.0
 
 LABEL maintainer="Team Hadenlabs <hello@hadenlabs.com>" \
-      org.label-schema.vcs-url="https://github.com/hadenlabs/docker-template" \
+      org.label-schema.vcs-url="https://github.com/hadenlabs/docker-activemq" \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 

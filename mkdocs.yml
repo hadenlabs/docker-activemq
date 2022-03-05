@@ -1,4 +1,4 @@
-site_name: docker-template Documentation
+site_name: docker-activemq Documentation
 theme: 'material'
 markdown_extensions:
   - toc:
@@ -15,8 +15,8 @@ extra:
   font:
     text: 'Source Sans Pro'
 
-repo_name: 'hadenlabs/docker-template'
-repo_url: 'https://github.com/hadenlabs/docker-template'
+repo_name: 'hadenlabs/docker-activemq'
+repo_url: 'https://github.com/hadenlabs/docker-activemq'
 copyright: 'Copyright © 2021 <a href="https://hadenlabs.com">hadenlabs</a>'
 
 google_analytics:
