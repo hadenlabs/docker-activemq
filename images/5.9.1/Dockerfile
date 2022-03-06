@@ -28,16 +28,15 @@ RUN \
     && mkdir -p /opt \
     && curl -s -S https://archive.apache.org/dist/activemq/$ACTIVEMQ_VERSION/$ACTIVEMQ-bin.tar.gz | tar -xvz -C /opt \
     && ln -s /opt/$ACTIVEMQ $ACTIVEMQ_HOME \
-    && addgroup -S activemq \
-    && adduser -S -H -G activemq -h $ACTIVEMQ_HOME activemq \
-    && chown -R activemq:activemq /opt/$ACTIVEMQ \
-    && chown -h activemq:activemq $ACTIVEMQ_HOME \
     && rm -rf /var/cache/apk/*
 
 EXPOSE 1883 5672 8161 61613 61614 61616
 
+# Expose some folders
+VOLUME ["/opt/activemq/data"]
+VOLUME ["/var/log/activemq"]
+VOLUME ["/opt/activemq/conf"]
 
-USER activemq
 WORKDIR $ACTIVEMQ_HOME
 
 CMD ["/bin/bash", "-c", "bin/activemq console"]
