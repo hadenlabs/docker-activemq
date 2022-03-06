@@ -3,38 +3,25 @@
 version: '3'
 
 tasks:
-  _build:
-    desc: Pre Build Image.
-    run: once
-    cmds:
-      - >-
-        docker buildx build --platform={{.DOCKER_PLATFORMS}}
-        --file {{.PATH_NAME}}/Dockerfile
-        --tag {{.DOCKER_ORGANIZATION}}/{{.DOCKER_IMAGE_NAME}}:{{.DOCKER_TAG}} .
-        --build-arg VERSION=0.0.0
-
-  _publish:
-    desc: Pre Publish Image.
-    run: once
-    cmds:
-      - >-
-        docker push {{.DOCKER_ORGANIZATION}}/{{.DOCKER_IMAGE_NAME}}:{{.DOCKER_TAG}}
-
   build:
     desc: Build Image.
     run: once
     cmds:
-      - task: _build
-        vars:
-          PATH_NAME: 0.0.0
-          DOCKER_TAG: 0.0.0
+      - >-
+        docker build
+        --file {{.DOCKER_TAG}}/Dockerfile
+        --tag {{.DOCKER_ORGANIZATION}}/{{.DOCKER_IMAGE_NAME}}:{{.DOCKER_TAG}} .
+        --build-arg VERSION={{.DOCKER_TAG}}
 
   publish:
     desc: Publish Image.
     run: once
-    deps:
-      - build
     cmds:
-      - task: _publish
-        vars:
-          DOCKER_TAG: 0.0.0
+      - >-
+        docker buildx build
+        --no-cache
+        --platform={{.DOCKER_PLATFORMS}}
+        --file {{.DOCKER_TAG}}/Dockerfile
+        --tag {{.DOCKER_ORGANIZATION}}/{{.DOCKER_IMAGE_NAME}}:{{.DOCKER_TAG}} .
+        --build-arg VERSION={{.DOCKER_TAG}}
+        --push
