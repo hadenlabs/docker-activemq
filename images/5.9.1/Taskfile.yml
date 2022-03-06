@@ -7,7 +7,7 @@ tasks:
     desc: Build Image.
     run: once
     vars:
-      DOCKER_TAG: 0.0.0
+      DOCKER_TAG: 5.9.0
     cmds:
       - >-
         docker buildx build --platform={{.DOCKER_PLATFORMS}}
@@ -19,7 +19,7 @@ tasks:
     desc: Publish Image.
     run: once
     vars:
-      DOCKER_TAG: 0.0.0
+      DOCKER_TAG: 5.9.0
     deps:
       - build
     cmds:

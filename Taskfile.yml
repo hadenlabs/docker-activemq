@@ -40,8 +40,8 @@ vars:
   PROJECT_NAME: docker-activemq
   ORGANIZATION: hadenlabs
   DOCKER_ORGANIZATION: hadenlabs
-  DOCKER_PLATFORMS: linux/amd64,linux/arm/v7,linux/arm64/v8
-  DOCKER_IMAGE_NAME: docker-activemq
+  DOCKER_PLATFORMS: linux/amd64,linux/arm64
+  DOCKER_IMAGE_NAME: activemq
   DOCKER_TAG: 0.0.0
   REVIEWERS: luismayta
   PYTHON_VERSION: 3.9.2
@@ -87,7 +87,6 @@ tasks:
       - go:check
       - gitflow:check
       - docs:check
-      - sonar:check
 
   readme:
     run: once
@@ -133,6 +132,6 @@ tasks:
     run: once
     desc: Push docker Image.
     deps:
-      - build:docker
+      - task: docker:login
     cmds:
       - task: images:publish
